@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.Customer.hiber">
+<class name="Customer" table="Customer">
+	<meta attribute="class-description">
+		This class contains the customer details.
+	</meta>
+
+	<id name="id" type="int" column="ID">
+		<generator class="increment"></generator>
+	</id>
+	<property name="name" column="Name" type="string"/>
+	<property name="email" column="Email" type="string"/>
+	<property name="city" column="City" type="string"/>      
+</class>
+</hibernate-mapping>
